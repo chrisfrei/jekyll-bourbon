@@ -29,3 +29,55 @@ assets:
   cache: true
   gzip: [ text/css, application/javascript ]
   debug: false
+  
+prose:
+  rooturl: 'source/_posts'
+  metadata:
+    source/_posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+          type: "text"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: ""
+          placeholder: "chris frei"
+          type: "text"
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"
+	  - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Post Category"
+          placeholder: "Create or choose"
+          alterable: true
+      - name: "comments"
+        field:
+          element: checkbox
+          label: "Comments"
+          value: "true"
