@@ -3,6 +3,21 @@
 /* Common
 /*
 /*****************************************************************************/
+@import "bourbon";
+@import "neat";
+
+section.blog {
+  @include outer-container;
+
+
+  article {
+    @include span-columns(6);
+  }
+
+  aside {
+    @include span-columns(6);
+  }
+}
 
 /* Global Reset */
 * {
@@ -13,7 +28,8 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #bada55;
+  background-image: url('{{ background.png | asset_path }}');
+  /*background-color: #aaa;*/
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;

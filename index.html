@@ -3,11 +3,22 @@ layout: default
 title: Bourbon / Neat
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<section class="blog">
+    <article id="home">
+        <h1>Blog Posts</h1>
+        <ul class="posts">
+            {% for post in site.posts %}
+            <li>
+                <span>{{ post.date | date_to_string }}</span>&raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </article>
+
+    <aside>
+Bottom clinton students mom kitchen woman cookie monster cuteness overload pokeman sit trolololo on. Mother really? I Dont Get It for ipsum alcohol genius 140% facebook true story. Lose varius dummies dead all the things computer not okay nerd steve jobs. Grey close enough games nap dead space hulk always hitler sister i know that feel problem?
+
+That hac dog joke i lied loki luke laptop avenger no. Meme oh stop it, you fap male top painfull gag architect vegan 9000 bacon troll. Homer cool weekend fuck yeah ba dumm tss crying win peter griffin. Brother puking rainbows gentlemen le girlfriend father panda left sandwich mother of god. Feel Like a Sir le me movie asian homework sweet jezus cellphone cuteness overload resident evil dolar. Men i see what you did there dad aww yeah bra essay anonymous humor avengers. Iron man hammer happy a coffee.
+</aside>
+
+</section>

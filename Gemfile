@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'neat'
+gem 'bourbon'
+
 gem 'jekyll-assets'
 
 # https://github.com/imathis
