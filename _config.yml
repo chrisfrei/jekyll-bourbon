@@ -1,6 +1,7 @@
 name: Bourbon / Neat
 markdown: redcarpet
 pygments: false
+author: chris frei
 
 excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
 
