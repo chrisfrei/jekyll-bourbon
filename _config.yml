@@ -30,54 +30,17 @@ assets:
   gzip: [ text/css, application/javascript ]
   debug: false
   
+#
+# Prose.io
+#
 prose:
-  rooturl: '_posts'
   metadata:
     _posts:
-      - name: "layout"
+     - name: "layout"
         field:
           element: "hidden"
-          value: "post"
-      - name: "title"
+          value: "post"    
+      - name: "category"
         field:
-          element: "text"
-          label: "Title"
-          value: ""
-          type: "text"
-      - name: "author"
-        field:
-          element: "text"
-          label: "Author"
-          value: ""
-          placeholder: "chris frei"
-          type: "text"
-      - name: "splash"
-        field:
-          element: "text"
-          label: "Splash image"
-          value: ""
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-            - name: "Pears"
-              value: "pears"
-            - name: "Mangos"
-              value: "mangos"
-	  - name: "categories"
-        field:
-          element: "multiselect"
-          label: "Post Category"
-          placeholder: "Create or choose"
-          alterable: true
-      - name: "comments"
-        field:
-          element: checkbox
-          label: "Comments"
-          value: "true"
+          element: "hidden"
+          value: "articles"
