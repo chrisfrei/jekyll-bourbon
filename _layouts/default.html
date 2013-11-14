@@ -6,14 +6,10 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        {% stylesheet main %}:
 
     </head>
-    <body>
+    <body class="{{ page.id }}">
 
         <div class="site">
           <div class="header">

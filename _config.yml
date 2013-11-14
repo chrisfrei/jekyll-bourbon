@@ -1,3 +1,30 @@
-name: Your New Jekyll Site
+name: Bourbon / Neat
 markdown: redcarpet
-pygments: true
+pygments: false
+
+excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
+
+exclude: ["Gemfile", "Gemfile.lock", "config.ru", "Procfile", "Rakefile", "readme.md"]
+#
+# Plugin: jekyll-minify-html
+#
+env: development
+minfy_html: false
+
+
+#
+# Plugin: jekyll-assets
+#
+assets:
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+  js_compressor: uglifier
+  css_compressor: sass
+  cachebust: hard
+  cache: true
+  gzip: [ text/css, application/javascript ]
+  debug: false
